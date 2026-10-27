@@ -1,73 +1,83 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
-  <title>Frederick Fabellon Faz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic portfolio of Frederick Fabellon Faz, mathematics educator and researcher.">
+  <meta name="theme-color" content="#102d4f">
+  <title>Frederick Fabellon Faz | Mathematics Educator & Researcher</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f7fb;
-      color: #263238;
-      text-align: center;
-    }
-    header {
-      background: #17365d;
-      color: white;
-      padding: 65px 20px;
-    }
-    section {
-      max-width: 850px;
-      margin: 30px auto;
-      padding: 25px;
-      background: white;
-      border-radius: 12px;
-    }
-    h2 { color: #17365d; }
-    footer { padding: 25px; }
+    :root{--navy:#102d4f;--navy2:#183e68;--gold:#c9a45a;--ink:#17283b;--muted:#596b7d;--bg:#f4f7fa;--white:#fff;--line:#dce5ec;--radius:18px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.7}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:4px} .container{width:min(1120px,calc(100% - 40px));margin:auto}
+    .site-header{background:rgba(16,45,79,.98);color:white;position:sticky;top:0;z-index:10;box-shadow:0 4px 20px #0a20381a}.nav-wrap{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:20px}.brand{font-weight:800;letter-spacing:.02em;font-size:1.12rem}.brand span{color:var(--gold)}.nav-links{display:flex;gap:20px;align-items:center}.nav-links a{font-size:.89rem;font-weight:600;opacity:.92}.nav-links a:hover{color:#f3dca9}.menu-toggle{display:none;background:transparent;border:1px solid #ffffff66;border-radius:9px;color:white;padding:8px 12px;font-size:1.1rem;cursor:pointer}
+    .hero{background:linear-gradient(125deg,#102d4f 10%,#204d79 80%);color:white;position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:360px;height:360px;border:1px solid #ffffff22;border-radius:50%;right:-140px;top:-120px;pointer-events:none}.hero-inner{display:grid;grid-template-columns:1.5fr .8fr;align-items:center;gap:65px;padding:105px 0}.eyebrow{color:#f1d39a;font-weight:800;text-transform:uppercase;letter-spacing:.18em;font-size:.75rem}.hero h1{font-size:clamp(2.4rem,5vw,4.3rem);line-height:1.13;letter-spacing:-.04em;margin:18px 0}.hero h1 span{color:#f0d29c}.hero .lead{font-size:1.2rem;color:#e2edf8;max-width:650px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;justify-content:center;align-items:center;border-radius:10px;padding:12px 19px;font-weight:750;border:1px solid transparent;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-2px)}.btn-gold{background:var(--gold);color:#14283b}.btn-outline{border-color:#b7cce0;color:white}.portrait{width:min(100%,320px);aspect-ratio:1;border-radius:50%;border:7px solid #ffffff44;box-shadow:0 18px 50px #071b3177;background:#31597d;display:grid;place-items:center;justify-self:center;overflow:hidden}.portrait img{width:100%;height:100%;object-fit:cover}.portrait-fallback{text-align:center;color:#fff;font-size:4.5rem;font-weight:750}.portrait-fallback small{display:block;font-size:.8rem;font-weight:500;letter-spacing:.15em}
+    section.content-section{padding:84px 0}.section-heading{margin-bottom:32px}.kicker{color:#9c742f;font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;font-weight:800}.section-heading h2{font-size:clamp(1.9rem,3vw,2.5rem);line-height:1.2;margin:8px 0 12px;color:var(--navy)}.section-heading p{max-width:740px;color:var(--muted);margin:0}.surface-white{background:#fff}.two-col{display:grid;grid-template-columns:1.5fr 1fr;gap:30px;align-items:start}.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px;box-shadow:0 10px 30px #0b2b4810}.card h3{color:var(--navy);margin:0 0 10px;font-size:1.16rem}.card p{color:var(--muted);margin:0}.info-list{list-style:none;padding:0;margin:0}.info-list li{padding:11px 0;border-bottom:1px solid var(--line)}.info-list li:last-child{border-bottom:0}.info-list strong{display:block;color:var(--navy);font-size:.87rem}.info-list span{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.icon-circle{display:grid;place-items:center;width:45px;height:45px;background:#e9f0f6;border-radius:12px;font-size:1.35rem;margin-bottom:18px}.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{background:#eaf1f7;color:#285174;border-radius:100px;padding:5px 11px;font-size:.78rem;font-weight:700}.muted{color:var(--muted)}.placeholder{border-left:3px solid var(--gold);padding-left:18px}.placeholder strong{color:var(--navy)}.project-link{display:inline-block;margin-top:16px;color:#175889;font-weight:750}.project-link:hover{text-decoration:underline}.banner{background:var(--navy);color:white;border-radius:var(--radius);padding:35px;display:flex;align-items:center;justify-content:space-between;gap:20px}.banner h3{margin:0 0 5px;font-size:1.35rem}.banner p{margin:0;color:#d7e4ef}.contact-links{display:flex;flex-wrap:wrap;gap:12px}.contact-links a{display:inline-flex;padding:12px 18px;border:1px solid var(--line);border-radius:10px;background:white;font-weight:700;color:var(--navy)}.contact-links a:hover{border-color:var(--gold)}footer{background:#0c233d;color:#c8d6e5;padding:28px 0;text-align:center;font-size:.88rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-inner a{text-decoration:underline}
+    @media(max-width:900px){.nav-links{gap:12px}.nav-links a{font-size:.8rem}.hero-inner{gap:30px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.menu-toggle{display:block}.nav-links{display:none;position:absolute;left:0;right:0;top:76px;background:var(--navy);padding:18px 20px 25px;flex-direction:column;align-items:stretch;gap:0;box-shadow:0 10px 20px #06172b40}.nav-links.open{display:flex}.nav-links a{padding:10px;font-size:1rem}.hero-inner{grid-template-columns:1fr;padding:65px 0;gap:35px}.hero-copy{order:2}.portrait{order:1;width:190px}.two-col,.grid{grid-template-columns:1fr}.banner{flex-direction:column;align-items:flex-start}section.content-section{padding:60px 0}.card{padding:23px}.footer-inner{justify-content:center;text-align:center}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Frederick Fabellon Faz</h1>
-    <p>Mathematics Educator | Researcher</p>
-    <p>Welcome to my academic website</p>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Frederick <span>Faz.</span></a>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <nav id="nav-links" class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#teaching">Teaching</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I am a mathematics educator with
-      14 years of teaching experience,
-      dedicated to mathematics education,
-      research, and student development.
-    </p>
-  </section>
-
-  <section>
-    <h2>Research Interests</h2>
-    <p>
-      Manifold Learning, Dimensionality Reduction,
-      t-SNE, UMAP, and Mathematics Education.
-    </p>
-  </section>
-
-  <section>
-    <h2>Research and Publications</h2>
-    <p>Research projects and publications
-       will be featured here.</p>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>GitHub: SirFaz1189</p>
-  </section>
-
-  <footer>
-    © 2026 Frederick Fabellon Faz
-  </footer>
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">Academic Portfolio</div>
+          <h1 id="hero-title">Frederick<br><span>Fabellon Faz</span></h1>
+          <p class="lead">Mathematics Educator &amp; Researcher</p>
+          <p>Exploring mathematical ideas, computational methods, and meaningful approaches to mathematics education.</p>
+          <div class="hero-actions"><a class="btn btn-gold" href="#research">Explore My Research</a><a class="btn btn-outline" href="#contact">Get in Touch</a></div>
+        </div>
+        <div class="portrait" aria-label="Profile photo area">
+          <!-- To add your photo, upload profile.jpg beside index.html and replace the fallback div with: <img src="profile.jpg" alt="Portrait of Frederick Fabellon Faz"> -->
+          <div class="portrait-fallback" aria-hidden="true">FF<small>MATHEMATICS • RESEARCH</small></div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="content-section surface-white">
+      <div class="container"><div class="section-heading"><span class="kicker">Introduction</span><h2>About Me</h2><p>A commitment to teaching, learning, and mathematical inquiry.</p></div>
+        <div class="two-col"><div class="card"><h3>Welcome to my academic website</h3><p>I am a mathematics educator with 14 years of teaching experience. My professional interests include mathematics education, computational mathematics, and the exploration of mathematical methods for understanding complex data.</p><p style="margin-top:15px">This website is a space to share my research interests, teaching work, academic projects, and professional development.</p></div>
+        <div class="card"><h3>Professional Snapshot</h3><ul class="info-list"><li><strong>Field</strong><span>Mathematics Education</span></li><li><strong>Experience</strong><span>14 years of teaching</span></li><li><strong>Research Areas</strong><span>Manifold Learning and Dimensionality Reduction</span></li><li><strong>GitHub</strong><span>SirFaz1189</span></li></ul></div></div>
+      </div>
+    </section>
+    <section id="research" class="content-section">
+      <div class="container"><div class="section-heading"><span class="kicker">Scholarly Interests</span><h2>Research</h2><p>Mathematical foundations, optimization, and geometry in modern data analysis.</p></div>
+        <div class="grid"><article class="card"><div class="icon-circle">∑</div><h3>Manifold Learning</h3><p>Investigating methods that reveal low-dimensional structure in high-dimensional datasets.</p><div class="tags"><span class="tag">Geometry</span><span class="tag">Data Analysis</span></div></article>
+        <article class="card"><div class="icon-circle">⌁</div><h3>t-SNE &amp; UMAP</h3><p>Studying how initialization strategies influence optimization behavior and geometric preservation.</p><div class="tags"><span class="tag">Optimization</span><span class="tag">Dimensionality Reduction</span></div></article>
+        <article class="card"><div class="icon-circle">π</div><h3>Mathematics Education</h3><p>Exploring ways to support mathematical understanding, reasoning, and student learning.</p><div class="tags"><span class="tag">Teaching</span><span class="tag">Learning</span></div></article></div>
+      </div>
+    </section>
+    <section id="publications" class="content-section surface-white">
+      <div class="container"><div class="section-heading"><span class="kicker">Academic Work</span><h2>Publications &amp; Presentations</h2><p>Selected research outputs and scholarly presentations will appear here.</p></div>
+      <div class="card placeholder"><strong>Publication list coming soon</strong><p>Add verified publication titles, coauthors, dates, journal or conference names, and DOI links here. This section intentionally does not list unverified publications.</p></div></div>
+    </section>
+    <section id="teaching" class="content-section">
+      <div class="container"><div class="section-heading"><span class="kicker">Education &amp; Mentorship</span><h2>Teaching</h2><p>Supporting students in developing mathematical confidence, reasoning, and curiosity.</p></div>
+      <div class="two-col"><article class="card"><h3>Teaching Philosophy</h3><p>I value clear mathematical explanations, active participation, and opportunities for students to develop independent problem-solving skills.</p></article><article class="card"><h3>Teaching Experience</h3><p>14 years of experience as a mathematics educator. Specific courses, responsibilities, and teaching materials can be added as the portfolio grows.</p></article></div></div>
+    </section>
+    <section id="projects" class="content-section surface-white">
+      <div class="container"><div class="section-heading"><span class="kicker">Code &amp; Exploration</span><h2>Projects</h2><p>A growing collection of computational mathematics and academic work.</p></div>
+      <div class="grid"><article class="card"><h3>Dimensionality Reduction Experiments</h3><p>Research-focused investigations of t-SNE and UMAP initialization, optimization, and embedding quality.</p><span class="tag">Research in progress</span></article>
+      <article class="card"><h3>Mathematical Computing</h3><p>Space for numerical demonstrations, Python notebooks, and reproducible mathematical examples.</p><span class="tag">Planned showcase</span></article>
+      <article class="card"><h3>GitHub Repositories</h3><p>Browse my publicly available repositories and future open-source projects.</p><a class="project-link" href="https://github.com/SirFaz1189" target="_blank" rel="noopener noreferrer">View my GitHub profile →</a></article></div></div>
+    </section>
+    <section class="content-section"><div class="container"><div class="banner"><div><h3>Curriculum Vitae</h3><p>My academic CV can be added here once the PDF is uploaded to this repository.</p></div><a class="btn btn-gold" href="#contact">Request CV</a></div></div></section>
+    <section id="contact" class="content-section surface-white"><div class="container"><div class="section-heading"><span class="kicker">Connect</span><h2>Contact</h2><p>Interested in academic collaboration, mathematics education, or research discussions? You can connect with me through the links below.</p></div><div class="contact-links"><a href="https://github.com/SirFaz1189" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="mailto:fffaz@mrp.pshs.edu.ph">Email ↗</a></div></div></section>
+  </main>
+  <footer><div class="container footer-inner"><span>© <span id="year">2026</span> Frederick Fabellon Faz. All rights reserved.</span><span>Built with HTML, CSS &amp; GitHub Pages</span></div></footer>
+  <script>
+    const menuButton=document.querySelector('.menu-toggle');
+    const nav=document.querySelector('.nav-links');
+    menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));menuButton.textContent=open?'✕':'☰';});
+    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>
